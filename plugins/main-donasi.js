@@ -21,7 +21,7 @@ wa.me/${numberowner} (Owner)
   conn.sendButtonImg(m.chat, fla + teks, anu, instagram, 'Back', '.help', m) 
 }
 handler.help = ['donasi', 'donate']
-handler.tags = ['xp']
+handler.tags = ['info']
 handler.command = /^(donasi|donate)$/i
 
 module.exports = handler
