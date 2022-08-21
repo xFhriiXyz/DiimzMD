@@ -1,5 +1,5 @@
 let handler = async (m, { conn, args, command }) => {
-    let chat = conn.chats.all().filter(v => v.jid.endsWith('g.us') && !v.read_only)
+    let chat = chats.all().filter(v => v.jid.endsWith('g.us') && !v.read_only)
     if (command.endsWith('all') || command.endsWith('semua')) {
         for (let i = 0; i < chat.length; i++) { // For loops
             await m.reply('Byee👋, Bot akan keluar dari group', chat[i].jid)
