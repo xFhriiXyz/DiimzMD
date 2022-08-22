@@ -20,7 +20,7 @@ let handler = async(m, { conn, text }) => {
     await conn.sendMessage(m.chat, { image: thumb, caption: hasil, quoted: m })
 }
 handler.help = ['githubstalk']
-handler.tags = ['tools']
+handler.tags = ['github']
 handler.command = /^(ghstalk|githubstalk)$/i
 handler.limit = true
 
