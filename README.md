@@ -57,8 +57,11 @@ WhatsApp Bot Multi Device
 [![DiimzOfficial Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=GempyTon&layout=compact&theme=radical)](https://github-readme-stats.vercel.app)
 
 # Thanks to
- [![Nurutomo](https://github.com/Nurutomo.png?size=200)](https://github.com/Nurutomo) | [![Ariffb](https://github.com/ariffb25.png?size=200)](https://github.com/ariffb25) | [![F](https://github.com/Paquito1923.png?size=200)](https://github.com/Paquito1923) | [![Gempy](https://github.com/GempyTon.png?size=200)](https://github.com/GempyTon)
-[Nurutomo](https://github.com/Nurutomo) | [Ariffb](https://github.com/ariffb25) | [Elyas](https://github.com/Paquito1923) | [Gempy](https://github.com/GempyTon)
+-    ['Nurutomo'](https://github.com/Nurutomo)
+-    ['Ariffb'](https://github.com/ariffb25)
+-    ['Elyas'](https://github.com/Paquito1923)
+-    ['Gempy'](https://github.com/GempyTon)
+-    ['Diimz'](https://github.com/DiimzOfficial)
 
 ---------
 
