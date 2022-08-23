@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://i.postimg.cc/59z2fSJH/Picsart-22-07-30-18-30-27-233.jpg" alt="Diimz-MD" width="300" />
+<img src="https://i.postimg.cc/kgF8FKpp/IMG-20220823-WA0052.jpg" alt="Diimz-MD" width="300" />
 
 </p>
 <h1 align="center">Diimz Official</h1>
