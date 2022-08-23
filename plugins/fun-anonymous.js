@@ -1,24 +1,38 @@
-let handler = m => m
+let { MessageType, Presence } = require('@adiwajshing/baileys')
+const PhoneNumber = require('awesome-phonenumber')
 
-handler.before = async function (m, { match }) {
-    // if (match) return !1
-    if (!m.chat.endsWith('@s.whatsapp.net')) return !0
-    this.anonymous = this.anonymous ? this.anonymous : {}
-    let room = Object.values(this.anonymous).find(room => [room.a, room.b].includes(m.sender) && room.state === 'CHATTING')
-    if (room) {
-        if (/^.*(next|leave|start)/.test(m.text)) return
-        if (['.next', '.leave', '.start', 'Cari Partner', 'Keluar', 'Next'].includes(m.text)) return
-        let other = [room.a, room.b].find(user => user !== m.sender)
-        m.copyNForward(other, true, m.quoted && m.quoted.fromMe ? {
-            contextInfo: {
-                ...m.msg.contextInfo,
-                forwardingScore: 1,
-                isForwarded: true,
-                participant: other
+async function handler(m, { command, conn, text }) {
+	this.anonymous = this.anonymous ? this.anonymous : {}
+	let who = m.sender
+	let room = Object.values(this.anonymous).find(room => room.check(who))
+	if (!room) throw 'kamu tidak berada di anonymous chat'
+	let other = room.other(who)
+  var name
+  if (text) name = text
+  else name = conn.getName(m.sender)
+	var number = who.split('@')[0]
+	let vcard = `
+BEGIN:VCARD
+VERSION:3.0
+FN:${name.replace(/\n/g, '\\n')}
+TEL;type=CELL;type=VOICE;waid=${number}:${PhoneNumber('+' + number).getNumber('international')}
+END:VCARD`
+
+	this.reply(m.chat, `Kamu berhasil mengirim kontak kepada partner mu..`, m)
+	if (other) this.reply(other, `Partner mengirimkan kontak kepadamu`, m)
+	if (other) this.sendMessage(other, {
+            contacts: {
+                displayName: name,
+                contacts: [{ vcard }]
             }
-        } : {})
-    }
-    return !0
+        })
+	//if (other) this.sendContact(other, number, name, m) 
 }
-
+handler.help = ['sendkontak']
+handler.tags = ['anonymous']
+handler.command = /^(sendkontak)$/i
+handler.private = true
+handler.fail = null
 module.exports = handler
+
+
