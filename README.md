@@ -48,7 +48,7 @@ WhatsApp Bot Multi Device
 # Creator Bot
  [![Diimz](https://github.com/DiimzOfficial.png?size=200)](https://github.com/DiimzOfficial) 
 
-[Dimz](https://github.com/DiimzOfficial)
+[Diimz](https://github.com/DiimzOfficial)
  Author & Creator
  
 ### SAN Statistics
