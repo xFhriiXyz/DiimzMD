@@ -1,26 +1,41 @@
-async function handler(m, { command, usedPrefix, isOwner }) {
-    if (!global.db.data.settings[this.user.jid].anon) return await this.sendBut(m.chat, isOwner ? 'Aktifkan' : 'Anonymous Chat dimatikan', wm2, isOwner ? 'Aktifkan' : 'Owner', isOwner ? '.on anon' : '.owner', m)
+const { MessageType } = require("@adiwajshing/baileys")
+
+async function handler(m, { command, usedPrefix }) {
     command = command.toLowerCase()
     this.anonymous = this.anonymous ? this.anonymous : {}
     switch (command) {
         case 'next':
-        case 'leave': {
+        case 'skip':
+        case 'stop': {
             let room = Object.values(this.anonymous).find(room => room.check(m.sender))
-            if (!room) return await this.sendBut(m.chat, '_Kamu tidak sedang berada di anonymous chat_', wm2, 'Cari Partner', `${usedPrefix}start`, m)
-            m.reply('_Ok_')
+         //   if (!room) this.sendButton(m.chat, 'Kamu tidak sedang berada di anonymous chat', wm, 'Search Partner..', '.next', m) // throw 'Kamu tidak sedang berada di anonymous chat\nKetik #start\nKetik /start\nKetik !start'
+        //    if (!room) throw 'Kamu tidak sedang berada di anonymous chat\nKetik #start\nKetik /start\nKetik !start'
+        if (!room) {
+                await this.sendButton(m.chat, 'Kamu tidak sedang berada di anonymous chat', wm, null, [['Search Partner', '/start']], m)
+                throw 0
+            }
+           // this.send2Button(m.chat, 'Kamu telah memberhentikan chat', wm, 'Search Partner..', `${usedPrefix}start`, 'Stop..', `${usedPrefix}stop`, m)
+           //m.reply('Kamu telah memberhentikan chat')
+        //    let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+       //     if (!room) throw 'Kamu tidak sedang berada di anonymous chat\nKetik #start\nKetik /start\nKetik !start'
+            this.sendButton(m.chat, 'Kamu telah memberhentikan chat', wm, null, [['Search Partner', '/start']], m)
             let other = room.other(m.sender)
-            if (other) await this.sendBut(other, '_Partner meninggalkan chat_', wm2, 'Cari Partner', `${usedPrefix}start`, m)
+            if (other) this.sendButton(other, 'Partner telah memberhentikan chat', wm, null, [['Search Partner', '/start']], m)
+           // if (other) this.send2Button(other, 'Partner meninggalkan chat', wm, 'Search Partner..', '/start',  m)
             delete this.anonymous[room.id]
-            if (command === 'leave') break
+            if (command === 'stop') break
         }
+        case 'search':
         case 'start': {
-            if (Object.values(this.anonymous).find(room => room.check(m.sender))) return await this.sendBut(m.chat, '_Kamu masih berada di dalam anonymous chat, menunggu partner_', wm2, 'Keluar', `${usedPrefix}leave`, m)
+            if (Object.values(this.anonymous).find(room => room.check(m.sender))) throw 'Kamu masih berada di dalam anonymous chat'
             let room = Object.values(this.anonymous).find(room => room.state === 'WAITING' && !room.check(m.sender))
             if (room) {
-                await this.sendBut(room.a, '_Partner ditemukan!_', wm2, 'Next', `${usedPrefix}next`, m)
+             //   this.send2Button(room.a, 'Menemukan partner!', '© Aine', 'Next Partner..', '/skip', 'Stop..', '/stop', m)
+                this.reply(room.a, 'Menemukan partner!', m)
                 room.b = m.sender
                 room.state = 'CHATTING'
-                await this.sendBut(room.b, '_Partner ditemukan!_', wm2, 'Next', `${usedPrefix}next`, m)
+                //this.send2Button(room.b, 'Menemukan partner!', '© Aine', 'Next Partner..', '/skip', 'Stop..', '/stop', m)
+                this.reply(room.b, 'Menemukan partner!', m)
             } else {
                 let id = + new Date
                 this.anonymous[id] = {
@@ -35,16 +50,16 @@ async function handler(m, { command, usedPrefix, isOwner }) {
                         return who === this.a ? this.b : who === this.b ? this.a : ''
                     },
                 }
-                await this.sendBut(m.chat, '_Menunggu partner..._', wm2, 'Keluar', `${usedPrefix}leave`, m)
+                m.reply('Menunggu partner...')
             }
             break
         }
     }
 }
-handler.help = ['start', 'leave', 'next']
+handler.help = ['start', 'skip', 'stop', 'next']
 handler.tags = ['anonymous']
-handler.command = ['start', 'leave', 'next']
 
+handler.command = ['start', 'skip', 'stop', 'next', 'search']
 handler.private = true
 
 module.exports = handler
