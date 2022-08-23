@@ -1,14 +1,28 @@
-let handler = async(m, { conn, text }) => {
-    if (!text) throw 'Silahkan masukkan laporan'
-    if (text.length > 300) throw 'Maaf Teks Terlalu Panjang, Maksimal 300 Teks!'
-    const laporan = `*「 REPORT 」*\nNomor : wa.me/${m.sender.split`@`[0]}\nPesan : ${text}`
-    for (let jid of global.owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid && v != '6281270120658@s.whatsapp.net'))
-    m.reply(laporan, jid)
-    m.reply(laporan, m.sender) // Mwehehehehe
-    m.reply('✔️Masalah telah di laporkan ke Owner Bot, laporan palsu/main2 tidak akan ditanggapi!')
+
+
+const { MessageType } = require('@adiwajshing/baileys')
+
+let handler = async(m, { conn, text, usedPrefix, command}) => {
+    if (!text) return conn.reply(m.chat, `Silahkan masukan laporan kamu`, m)
+    if (text > 300) return conn.reply(m.chat, 'Maaf Teks Terlalu Panjang, Maksimal 300 Teks', m)
+    var nomor = m.sender
+    const teks1 = `*「 REPORT 」*\nNomor : wa.me/${nomor.split("@s.whatsapp.net")[0]}\nPesan : ${text}`
+    conn.reply('6281270120658@s.whatsapp.net', teks1, m)
+    conn.reply(m.chat, '✔️ Masalah berhasil dikirimkan ke Owner', m)
 }
-handler.help = ['bug', 'report'].map(v => v + ' <laporan>')
+handler.help = ['report <fitur>']
 handler.tags = ['info']
-handler.command = /^(bug|report)$/i
+handler.command = /^(report|lpr|lapor)$/i
+handler.owner = false
+handler.mods = false
+handler.premium = false
+handler.group = false
+handler.limit = false
+handler.private = false
+
+handler.admin = false
+handler.botAdmin = false
+
+handler.fail = null
 
 module.exports = handler
