@@ -18,8 +18,9 @@ let [number, pesan] = text.split `|`
     conn.reply(m.chat, logs, m)
 }
 handler.command = /^(pesan)$/i
-handler.rowner = false
-handler.limit = true
+handler.tags = ['owner']
+handler.rowner = true
+handler.limit = false
 handler.premium = false
 handler.group = false
 handler.private = false
