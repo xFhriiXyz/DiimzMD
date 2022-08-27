@@ -126,7 +126,7 @@ node .
 
 ---------
 
-# Creator Bot
+## Creator Bot
  [![Diimz](https://github.com/DiimzOfficial.png?size=200)](https://github.com/DiimzOfficial) 
 
 [Diimz](https://github.com/DiimzOfficial)
@@ -137,7 +137,7 @@ node .
 [![DiimzOfficial GitHub Stats](https://github-readme-stats.vercel.app/api?username=DiimzOfficial&show_icons=true&hide=issues&theme=radical)](https://github-readme-stats.vercel.app)
 [![DiimzOfficial Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=GempyTon&layout=compact&theme=radical)](https://github-readme-stats.vercel.app)
 
-# Thanks to
+## Thanks to
 -    [`Nurutomo`](https://github.com/Nurutomo)
 -    [`Ariffb`](https://github.com/ariffb25)
 -    [`Elyas`](https://github.com/Paquito1923)
