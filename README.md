@@ -124,6 +124,8 @@ npm update
 ```bash
 node .
 
+---------
+
 # Creator Bot
  [![Diimz](https://github.com/DiimzOfficial.png?size=200)](https://github.com/DiimzOfficial) 
 
