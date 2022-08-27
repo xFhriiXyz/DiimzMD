@@ -45,88 +45,7 @@ WhatsApp Bot Multi Device
 | **IMAGEMAGICK** | [HERE](https://github.com/mcollina/heroku-buildpack-imagemagick.git) |
 | **Node.js**     | heroku/nodejs|
 
-## TERMUX USER
-```bash
-$ pkg upgrade && pkg update
-$ pkg install git -y
-$ pkg install nodejs -y
-$ pkg install ffmpeg -y
-$ pkg install imagemagick -y
-$ git clone https://github.com/DiimzOfficial/DiimzMD
-$ cd DiimzMD-master
-$ npm i 
-```
-If error try using yarn instead of npm, see [here](https://github.com/kannachann/KannaBOT-MD#if-npm-install-failed--try--using-yarn-instead-of-npm)
-```bash
-$ node .
-```
-
-#### If npm install failed, try using yarn instead of npm
-```bash
-$ pkg install yarn -y
-$ yarn install
-```
----------
-
-## TERMUX WITH UBUNTU
-
-```bash
-apt update && apt full-upgrade
-apt install wget curl git proot-distro
-proot-distro install ubuntu
-echo "proot-distro login ubuntu" > $PREFIX/bin/ubuntu
-ubuntu
-```
----------
-
-[ INSTALLING REQUIRED PACKAGES ]
-
-```bash
-ubuntu
-apt update && apt full-upgrade
-apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev dbus-x11 ffmpeg2theora ffmpegfs ffmpegthumbnailer ffmpegthumbnailer-dbg ffmpegthumbs libavcodec-dev libavcodec-extra libavcodec-extra58 libavdevice-dev libavdevice58 libavfilter-dev libavfilter-extra libavfilter-extra7 libavformat-dev libavformat58 libavifile-0.7-bin libavifile-0.7-common libavifile-0.7c2 libavresample-dev libavresample4 libavutil-dev libavutil56 libpostproc-dev libpostproc55 graphicsmagick graphicsmagick-dbg graphicsmagick-imagemagick-compat graphicsmagick-libmagick-dev-compat groff imagemagick-6.q16hdri imagemagick-common libchart-gnuplot-perl libgraphics-magick-perl libgraphicsmagick++-q16-12 libgraphicsmagick++1-dev
-```
-
----------
-
-[ INSTALLING NODEJS & DIIMZ-MD]
-
-```bash
-ubuntu
-curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
-apt install -y nodejs gcc g++ make
-git clone https://github.com/DiimzOfficial/DiimzMD
-cd DiimzMD-master
-npm install
-npm update
-```
-
----------
-
-## FOR WINDOWS/VPS/RDP USER 💻
-
-* Download And Install Git [`Click Here`](https://git-scm.com/downloads)
-* Download And Install NodeJS [`Click Here`](https://nodejs.org/en/download)
-* Download And Install FFmpeg [`Click Here`](https://ffmpeg.org/download.html) (**Don't Forget Add FFmpeg to PATH enviroment variables**)
-* Download And Install ImageMagick [`Click Here`](https://imagemagick.org/script/download.php)
-
-```bash
-git clone https://github.com/DiimzOfficial/DiimzMD
-cd DiimzMD-master
-npm install
-npm update
-```
-
----------
-
-## Run 📛
-
-```bash
-node .
-
----------
-
-## Creator Bot
+# Creator Bot
  [![Diimz](https://github.com/DiimzOfficial.png?size=200)](https://github.com/DiimzOfficial) 
 
 [Diimz](https://github.com/DiimzOfficial)
@@ -137,7 +56,7 @@ node .
 [![DiimzOfficial GitHub Stats](https://github-readme-stats.vercel.app/api?username=DiimzOfficial&show_icons=true&hide=issues&theme=radical)](https://github-readme-stats.vercel.app)
 [![DiimzOfficial Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=GempyTon&layout=compact&theme=radical)](https://github-readme-stats.vercel.app)
 
-## Thanks to
+# Thanks to
 -    [`Nurutomo`](https://github.com/Nurutomo)
 -    [`Ariffb`](https://github.com/ariffb25)
 -    [`Elyas`](https://github.com/Paquito1923)
