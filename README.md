@@ -29,7 +29,11 @@
 - [x] Reply bot <details><summary>Screenshot</summary><img src="https://telegra.ph/file/5f15ad8a26c06115e35e3.jpg"></details>
 - [x] Menu  <details><summary>Screenshot</summary><img src="https://telegra.ph/file/d674b1b15748d37e260c7.jpg"></details>
 ------------------
-
+## ```Whatsapp``` <a href="https://wa.me/6288215689772"> <img align="left" alt="SIEGRIN | Whastapp" width="26px" src="https://github.com/siegrin/siegrin/blob/main/Assets/Whatsapp.svg" />
+[![BOT WHATSAPP](https://img.shields.io/badge/WhatsApp%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6283876796535) 
+[![OWNER](https://img.shields.io/badge/Owner%20BOT-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6281270120658) 
+[![GROUP BOT](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/IovbYmdWeSKCOr52o9wsaZ) 
+---------
 # Run On Heroku
 
 WhatsApp Bot Multi Device
