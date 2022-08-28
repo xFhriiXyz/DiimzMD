@@ -1,21 +1,21 @@
 //=============『 Utama 』================== //
-global.owner = ['6281270120658','6282144969232'] 
+global.owner = ['6287784720840','6287784720840'] 
 global.mods = [] 
 global.prems = [] 
 
 //=============『 Info Owner 』============== //
-global.nameowner = 'Diimz Official⁩⁩'
-global.numberowner = '6281270120658'
-global.instagram = 'https://www.instagram.com/xydmzzzz'
+global.nameowner = 'Fiqz Cuy'
+global.numberowner = '6287784720840'
+global.instagram = 'https://www.instagram.com/jokowi'
 global.github = '-'
-global.dana = '081270120658'
-global.pulsa = '081270120658'
-global.ovo = '081270120658'
+global.dana = '-'
+global.pulsa = '-'
+global.ovo = '-'
 
 //=============『 Info Bot 』=================//
-global.namebot = 'Diimz Bot'
-global.gc = 'https://chat.whatsapp.com/IovbYmdWeSKCOr52o9wsaZ'
-global.web = 'https://youtube.com/channel/UC6QMJdMtd8ljZYO8Liypwng' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
+global.namebot = 'Shikimori'
+global.gc = '-'
+global.web = '-' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
 global.price1 = '1 bulan = 10.000\n2 Minggu 7.000\n1 Minggu 5.000'
 
 //=======『 Tampilan Dan Lainnya 』============//
@@ -23,10 +23,10 @@ global.fotonya1 = 'https://i.postimg.cc/nL4X9Wjz/Picsart-22-08-04-13-19-11-727.j
 global.fotonya2 = 'https://i.postimg.cc/nL4X9Wjz/Picsart-22-08-04-13-19-11-727.jpg' //ini juga ganti 
 global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:v
 global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired
-global.wm = 'Diimz Bot'
+global.wm = 'Shikimori'
 global.watermark = wm
-global.wm2 = '                     「 Diimz Bot 」 '
-global.wm3 = 'Diimz Official'
+global.wm2 = '                     「 Shiki Mori 」 '
+global.wm3 = 'Fiqz Cuy'
 global.htki = '––––––『' 
 global.htka = '』––––––'
 global.media = 'https://i.postimg.cc/nL4X9Wjz/Picsart-22-08-04-13-19-11-727.jpg'
@@ -36,7 +36,7 @@ global.eror = 'ERROR'
 global.benar = 'Benar ✅\n'
 global.salah = 'Salah ❌\n'
 global.stiker_wait = 'Stickers In Making...'
-global.packname = 'Diimz-Bot'
+global.packname = 'Fiqz Cuy'
 global.author = '@6283876786535⁩⁩'
 
 //=============『 Apikey 』================== //
