@@ -1,19 +1,19 @@
 //=============『 Utama 』================== //
-global.owner = ['6287784720840','6287784720840'] 
+global.owner = ['6282118868431','6282118868431'] 
 global.mods = [] 
 global.prems = [] 
 
 //=============『 Info Owner 』============== //
-global.nameowner = 'Fiqz Cuy'
-global.numberowner = '6287784720840'
-global.instagram = 'https://www.instagram.com/jokowi'
+global.nameowner = 'XynnZ Cuy'
+global.numberowner = '6282118868431'
+global.instagram = 'https://www.instagram.com/fhmhxxyz_'
 global.github = '-'
-global.dana = '-'
-global.pulsa = '-'
+global.dana = '6282118868431'
+global.pulsa = '6282118868431'
 global.ovo = '-'
 
 //=============『 Info Bot 』=================//
-global.namebot = 'Shikimori'
+global.namebot = 'XynnZ-MD'
 global.gc = '-'
 global.web = '-' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
 global.price1 = '1 bulan = 10.000\n2 Minggu 7.000\n1 Minggu 5.000'
@@ -23,10 +23,10 @@ global.fotonya1 = 'https://i.postimg.cc/nL4X9Wjz/Picsart-22-08-04-13-19-11-727.j
 global.fotonya2 = 'https://i.postimg.cc/nL4X9Wjz/Picsart-22-08-04-13-19-11-727.jpg' //ini juga ganti 
 global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:v
 global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired
-global.wm = 'Shikimori'
+global.wm = 'XynnZ'
 global.watermark = wm
-global.wm2 = '                     「 Shiki Mori 」 '
-global.wm3 = 'Fiqz Cuy'
+global.wm2 = '                     「 XynnZ is here 」 '
+global.wm3 = 'XynnZ Cuy'
 global.htki = '––––––『' 
 global.htka = '』––––––'
 global.media = 'https://i.postimg.cc/nL4X9Wjz/Picsart-22-08-04-13-19-11-727.jpg'
@@ -36,8 +36,8 @@ global.eror = 'ERROR'
 global.benar = 'Benar ✅\n'
 global.salah = 'Salah ❌\n'
 global.stiker_wait = 'Stickers In Making...'
-global.packname = 'Fiqz Cuy'
-global.author = '@6283876786535⁩⁩'
+global.packname = 'XynnZ Cuy'
+global.author = '@6282118868431'
 
 //=============『 Apikey 』================== //
 global.APIs = { // API Prefix
